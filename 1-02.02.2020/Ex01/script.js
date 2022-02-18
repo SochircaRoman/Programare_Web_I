@@ -28,5 +28,5 @@ switch (n) {
     case 9:
         alert("Noua");
     default:
-        alert("Nu ati introdus un numar 0-8!");
+        alert("Nu ati introdus un numar 0-9!");
 }
