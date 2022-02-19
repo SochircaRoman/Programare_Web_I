@@ -1,0 +1,11 @@
+#chess {  
+    margin: 0 auto;
+}
+
+td {
+ 	width: 80px;
+    height: 80px;   
+	border: 1px solid black; 
+	text-align: center;
+    padding: 0;
+}
