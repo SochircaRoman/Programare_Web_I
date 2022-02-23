@@ -1,14 +1,42 @@
-// Task 16
-let arr = [[1, 2], [3, 4], [null, 4], [3, undefined]];
-
-function f1(array) {
-    let newArray = [];
-    for (let i = 0; i <= array.length - 1; i++) {
-        if (typeof (array[i][0]) == "number" && typeof (array[i][1]) == "number") {
-            newArray.unshift(array[i]);
-        }
-    }
-    return newArray;
+// Task 17
+let person = {
+    name: "Person",
+    age: 123,
+    salary: 1542.33,
+    contacts: {
+        phone: "112",
+        email: "email@domain.com"
+    },
+    address: "Moldova"
 }
 
-console.log(f1(arr));
+function getName() {
+    return person.name;
+}
+
+function getAge() {
+    return person.age;
+}
+
+function getSalary() {
+    return person.salary;
+}
+
+function getContactsPhone() {
+    return person.contacts.phone;
+}
+
+function getContactsEmail() {
+    return person.contacts.email;
+}
+
+function getAddress() {
+    return person.address;
+}
+
+console.log(getName());
+console.log(getAge());
+console.log(getSalary());
+console.log(getContactsPhone());
+console.log(getContactsEmail());
+console.log(getAddress());
