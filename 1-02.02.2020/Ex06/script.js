@@ -1,5 +1,5 @@
 // Task 6
-let num = prompt("Please enter a number ");
+const num = prompt("Please enter a number ");
 
 if (num > 0) {
     alert(1);

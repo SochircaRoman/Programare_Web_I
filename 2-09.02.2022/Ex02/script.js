@@ -19,7 +19,7 @@ const arr = [{
 
 // 1.
 let sum = 0;
-function f1(arr) {
+const showAll = (arr) => {
     for (let i = 0; i <= arr.length - 1; i++) {
         for (let j = 0; j <= arr[i].marks.length - 1; j++) {
             sum += arr[i].marks[j];
@@ -28,10 +28,10 @@ function f1(arr) {
         sum = 0;
     }
 }
-f1(arr);
+showAll(arr);
 
 // 2.
-function f2(arr) {
+const filterMean = (arr) => {
     for (let i = 0; i <= arr.length - 1; i++) {
         for (let j = 0; j <= arr[i].marks.length - 1; j++) {
             sum += arr[i].marks[j];
@@ -42,14 +42,14 @@ function f2(arr) {
         sum = 0;
     }
 }
-f2(arr);
+filterMean(arr);
 
 // 3.
 let x = 0;
 let y = 10;
 let max;
 let min;
-function f3(arr) {
+const showMaxMinMean = (arr) => {
     for (let i = 0; i <= arr.length - 1; i++) {
         for (let j = 0; j <= arr[i].marks.length - 1; j++) {
             sum += arr[i].marks[j];
@@ -68,12 +68,12 @@ function f3(arr) {
     console.log(`Elevul cu cea mai mare medie: ${arr[max].name} Media: ${x}`);
     console.log(`Elevul cu cea mai mica medie: ${arr[min].name} Media: ${y}`);
 }
-f3(arr);
+showMaxMinMean(arr);
 
 // 4.
 /*
 let arrSort = {};
-function f4(arr) {
+const showSortMean = (arr) => {
     for (let i = 0; i <= arr.length - 1; i++) {
         for (let j = 0; j <= arr[i].marks.length - 1; j++) {
             sum += arr[i].marks[j];
@@ -82,13 +82,13 @@ function f4(arr) {
         sum = 0;
     }
 }
-f4(arr);
+showSortMean(arr);
 console.log(arrSort);
 */
 
 // 5.
 let classMean = 0;
-function f5(arr) {
+const filterClassMean = (arr) => {
     for (let i = 0; i <= arr.length - 1; i++) {
         for (let j = 0; j <= arr[i].marks.length - 1; j++) {
             sum += arr[i].marks[j];
@@ -107,4 +107,4 @@ function f5(arr) {
         sum = 0;
     }
 }
-f5(arr);
+filterClassMean(arr);

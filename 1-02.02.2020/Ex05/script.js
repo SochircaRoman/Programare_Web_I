@@ -1,5 +1,5 @@
 // Task 5
-function extractCurrencyValue(str) {
+const extractCurrencyValue = (str) => {
     let value = str.slice(1);
     return Number(value);
 }

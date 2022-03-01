@@ -1,5 +1,5 @@
 // Task 9
-let userName = prompt("Please enter your name: ");
+const userName = prompt("Please enter your name: ");
 alert(`Hi ${userName}!`);
 
 if (confirm(`${userName} do you know JavaScript?`)) {

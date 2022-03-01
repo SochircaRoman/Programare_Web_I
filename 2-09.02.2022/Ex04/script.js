@@ -3,7 +3,7 @@ let arr = [];
 let number;
 let sum = 0;
 
-function sumInputNumbers() {
+const sumInputNumbers = () => {
     do {
         number = prompt("Enter a number:");
         if (number == 0) {
@@ -17,9 +17,7 @@ function sumInputNumbers() {
     arr.pop();
     console.log(arr);
 
-    sum = arr.reduce(function (sum, elem) {
-        return sum + elem;
-    }, 0);
+    sum = arr.reduce((sum, elem) => sum + elem, 0);
 
     return sum;
 }

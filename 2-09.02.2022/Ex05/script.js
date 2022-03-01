@@ -1,11 +1,9 @@
 // Task 5
-let oldArray = [1, 2, 3, 4];
+const oldArray = [1, 2, 3, 4];
 
-function square(x) {
-    return x * x;
-}
+const square = (x) => x * x;
 
-function convert(fn, array) {
+const convert = (fn, array) => {
     let newArray = [];
     for (let i = 0; i <= array.length - 1; i++) {
         newArray = newArray.concat(fn(array[i]));

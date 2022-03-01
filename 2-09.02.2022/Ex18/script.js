@@ -10,7 +10,7 @@ const weekDays = {
 };
 
 const arr = ["Luni", "Marti", "Miercuri", "Joi", "Vineri", "Sambata", "Duminica"];
-function translate(obj) {
+const translate = (obj) => {
     const keys = Object.keys(weekDays);
     for (let i = 0; i <= arr.length - 1; i++) {
         weekDays[keys[i]] = arr[i];

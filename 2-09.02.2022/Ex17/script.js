@@ -7,36 +7,29 @@ let person = {
         phone: "112",
         email: "email@domain.com"
     },
-    address: "Moldova"
-}
+    address: "Moldova",
 
-function getName() {
-    return person.name;
-}
+    get name() {
+        return this.name;
+    },
 
-function getAge() {
-    return person.age;
-}
+    get age() {
+        return this.age;
+    },
 
-function getSalary() {
-    return person.salary;
-}
+    get salary() {
+        return this.salary;
+    },
 
-function getContactsPhone() {
-    return person.contacts.phone;
-}
+    get phone() {
+        return this.contacts.phone;
+    },
 
-function getContactsEmail() {
-    return person.contacts.email;
-}
+    get email() {
+        return this.contacts.email;
+    },
 
-function getAddress() {
-    return person.address;
+    get address() {
+        return this.address;
+    }
 }
-
-console.log(getName());
-console.log(getAge());
-console.log(getSalary());
-console.log(getContactsPhone());
-console.log(getContactsEmail());
-console.log(getAddress());

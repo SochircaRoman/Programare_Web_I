@@ -9,7 +9,7 @@ const weekDays = {
     "Duminica": "Su",
 };
 
-function castling(obj) {
+const castling = (obj) => {
     const newObj = {};
 
     const keys = Object.keys(weekDays);

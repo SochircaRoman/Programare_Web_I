@@ -15,7 +15,7 @@ document.getElementById("btnOrange").addEventListener("click", () => {
 const listOfElements = document.getElementById("listOfElements");
 let val = 1;
 
-let interval = setInterval(() => {
+const interval = setInterval(() => {
     if (val <= 20) {
         if (val % 2 == 0) {
             const x = listOfElements.appendChild(document.createElement("li"));

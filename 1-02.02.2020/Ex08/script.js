@@ -1,6 +1,6 @@
 // Task 8
-let username = "Roman";
-let password = "1234";
+const username = "Roman";
+const password = "1234";
 
 const submitButton = document.getElementById("submit");
 const receivedUsername = document.getElementById("username");
