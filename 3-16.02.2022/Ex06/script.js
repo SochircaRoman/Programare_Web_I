@@ -1,12 +1,23 @@
 // Task 6
-let impar = document.querySelectorAll('td.impar');
-let par = document.querySelectorAll('td.par');
+document.writeln("<table border=1>");
 
-
-for (let item of impar) {
-    item.setAttribute("bgcolor", "aquamarine");
-};
-
-for (let item of par) {
-    item.setAttribute("bgcolor", "chocolate");
-};
+let i = 1, j = 1;
+do {
+    document.writeln('</tr>');
+    j = 1;
+    do {
+        if ((i + j) % 2 == 0) {
+            document.writeln('<td bgcolor="white" width="20px" height="20px">');
+            document.writeln("     ");
+            document.writeln('</td>');
+        } else {
+            document.writeln('<td bgcolor="black" width="20px" height="20px">');
+            document.writeln("     ");
+            document.writeln('</td>');
+        }
+        j++;
+    } while (j <= 8);
+    document.writeln('</tr>');
+    i++;
+} while (i <= 8);
+document.writeln("</table>");
