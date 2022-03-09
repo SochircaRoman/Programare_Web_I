@@ -1,0 +1,26 @@
+{
+    "Employee": {
+        "name": "Sochirca Roman",
+        "birth": "01.05.2000",
+        "contacts": {
+            "phone": "06999555",
+            "address": "Moldova",
+            "email": "myMail@.com"
+        },
+        "sex": "Male",
+        "work": {
+            "position": "Programmer",
+            "start": "02.03.2022",
+            "idnp": "2005002324",
+            "salary": 10000,
+            "experience": 1,
+            "departament": "Software"
+        },
+        "birthAddress": "Vadeni",
+        "homePhone": "023049112",
+        "shedule": {
+            "workDay": "8:00-17:00",
+            "pause": "12:00-13:00"
+        }
+    }
+}
